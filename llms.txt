@@ -9,6 +9,8 @@
 - [首頁：LINE 會員裂變系統](https://crm.momowinwin.com/)：運作方式、功能、案例、方案費用、常見問題、會員成長試算
 - [餐廳 LINE 會員系統怎麼做](https://crm.momowinwin.com/restaurant/)：入座掃碼入會、離店自動貼標、離峰精準補桌，餐飲業案例
 - [LINE 官方帳號和 LINE CRM 差在哪](https://crm.momowinwin.com/line-oa-vs-crm/)：功能比較表與導入時機
+- [LINE 會員系統要多少錢](https://crm.momowinwin.com/pricing/)：LINE 官方帳號訊息費與 mecango 系統費的首年、次年試算
+- [推薦好友獎勵怎麼設計](https://crm.momowinwin.com/referral/)：會員裂變（MGM）六個設計原則、四種推薦獎勵設定、產業範例
 
 ## 方案費用（雲端服務費，年繳；以屹登股份有限公司當期公告為準）
 
