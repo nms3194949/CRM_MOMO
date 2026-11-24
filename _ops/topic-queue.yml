@@ -49,3 +49,13 @@ topics:
     title: 補習班、課程的 LINE 會員經營：報名、續課與轉介紹
     type: 產業頁
     status: todo
+  - slug: line-oa-plus
+    title: LINE OA PLUS 是什麼？跟 LINE 會員系統（CRM）差在哪
+    type: 問題頁
+    status: todo
+    source: https://tw.linebiz.com/column/LINEOA-2026-Price-Plan/
+  - slug: block-rate
+    title: LINE 好友封鎖率太高怎麼辦？店家降低封鎖的做法
+    type: 問題頁
+    status: todo
+    source: https://www.bnext.com.tw/article/50468/line-oa-operating-key-detail
