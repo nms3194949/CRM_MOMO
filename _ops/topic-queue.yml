@@ -4,7 +4,8 @@ topics:
   - slug: beauty
     title: 美業、美甲怎麼用 LINE 預約系統？24 小時自動接單與回訪
     type: 產業頁
-    status: todo
+    status: pr
+    date: 2026-11-25
   - slug: grow-line-friends
     title: 怎麼增加 LINE 官方帳號好友？實體店家 8 個做法
     type: 問題頁
