@@ -6,7 +6,7 @@
 <title>LINE 會員裂變系統</title>
 <meta name="description" content="明哲MOMO｜mecango LINE 會員裂變系統導入顧問。讓客人幫店家找客人：LINE 官方帳號 × CRM × 推薦獎勵，適合餐飲、美業、零售與服務業。">
 <meta property="og:title" content="讓客人幫你找客人｜LINE 會員裂變系統">
-<meta property="og:description" content="不是又一套 LINE 工具，是會一直長出新客人的會員機制。mecango 由屹登股份有限公司提供，研發原廠為黑快馬股份有限公司。">
+<meta property="og:description" content="不是又一套 LINE 工具，是會一直長出新客人的會員機制。mecango 由屹登股份有限公司提供。">
 <link rel="canonical" href="https://crm.momowinwin.com/">
 <meta property="og:url" content="https://crm.momowinwin.com/">
 <meta property="og:type" content="website">
@@ -20,12 +20,12 @@
 /* VOICE occasion: a confident shop-owner landing page, warm and plain-spoken
    IDEA a LINE coupon that gets passed hand to hand and multiplies
    PICTURE one member at the root branching into a growing tree of new members, drawn live
-   COLOUR white ground, deep green #0a4a33 fields, LINE green #06c755, coupon yellow #ffd23f
+   COLOUR white ground, pale mint #e8f6ee bands, LINE green #06c755, coupon yellow #ffd23f
    TYPE Noto Sans TC 900 for titles + Noto Sans TC 400/500 text
    LAYOUT laptop: title block left over the fission tree band; phone: title, tree, button */
-:root{color-scheme:light dark;--bg:light-dark(#ffffff,#0b1511);--ink:light-dark(#10201a,#e8f2ec);--soft:light-dark(#4a5d55,#a9bdb3);--deep:light-dark(#0a4a33,#0f3d2c);--deepink:#f2fbf6;--line:#06c755;--lineink:light-dark(#058a3c,#3ee282);--yel:#ffd23f;--panel:light-dark(#f2f8f4,#13221b);--rule:light-dark(#d6e5dc,#24392f)}
+:root{color-scheme:light;--bg:#ffffff;--ink:#10201a;--soft:#4a5d55;--deep:#e8f6ee;--deepink:#10201a;--line:#06c755;--lineink:#058a3c;--yel:#ffd23f;--panel:#f4faf6;--rule:#d6e5dc}
 :root[data-theme=light]{color-scheme:light}
-:root[data-theme=dark]{color-scheme:dark}
+:root[data-theme=dark]{color-scheme:light}
 *{box-sizing:border-box;min-width:0}
 html{scroll-padding-top:72px;scroll-behavior:smooth}
 body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 "Noto Sans TC",system-ui,sans-serif;overflow-x:clip}
@@ -62,7 +62,7 @@ nav .btn{min-height:44px;padding:0 18px;font-size:15px}
 .fig>svg{position:absolute;inset:0;width:100%;height:100%}
 .figcap{position:absolute;left:18px;bottom:14px;color:var(--deepink);font-size:14px;opacity:.85}
 .deep{background:var(--deep);color:var(--deepink)}
-.deep .lede{color:#bfe0cf}
+.deep .lede{color:var(--soft)}
 .pains{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:30px}
 .pains div{border-left:3px solid var(--yel);padding:4px 0 4px 16px}
 .pains b{font-size:19px;display:block}
@@ -100,7 +100,7 @@ input[type=range]{width:100%;height:44px;accent-color:var(--line)}
 .feat h3{margin-bottom:6px}
 .feat p{color:var(--soft);font-size:15px;margin:0}
 .mods{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
-.mods span{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.25);border-radius:999px;padding:8px 16px;font-weight:500}
+.mods span{background:#fff;border:1px solid var(--rule);border-radius:999px;padding:8px 16px;font-weight:500}
 .scroll{overflow-x:auto}
 table{width:100%;border-collapse:collapse;margin-top:24px;font-size:15px}
 th,td{text-align:left;padding:12px 10px;border-bottom:1px solid var(--rule);vertical-align:top}
@@ -112,7 +112,7 @@ td.us::marker{content:none}
 .case{background:var(--panel);border-radius:18px;padding:20px;border:1px solid var(--rule)}
 .case small{color:var(--soft)}
 .case b{display:block;font-size:clamp(30px,3.4vw,40px);font-weight:900;color:var(--lineink);line-height:1.1;margin:10px 0 4px;white-space:nowrap}
-.trust{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;margin-top:28px}
+.trust{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:28px}
 .trust div{border-top:3px solid var(--line);padding-top:12px}
 .trust p{color:var(--soft);font-size:15px}
 details{border-bottom:1px solid var(--rule);padding:14px 0}
@@ -121,7 +121,7 @@ details p{color:var(--soft)}
 .final{text-align:left;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:24px;align-items:center}
 footer{padding:28px max(5vw,16px);font-size:14px;color:var(--soft);border-top:1px solid var(--rule)}
 footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between}
-@media(max-width:900px){.hero,.calc{grid-template-columns:minmax(0,1fr)}.steps,.grid4,.cases,.trust{grid-template-columns:repeat(2,minmax(0,1fr))}nav .links{display:none}}
+@media(max-width:900px){.hero,.calc{grid-template-columns:minmax(0,1fr)}.steps,.grid4,.cases{grid-template-columns:repeat(2,minmax(0,1fr))}nav .links{display:none}}
 @media(max-width:600px){.pains,.trust,.steps,.grid4,.cases,.facts{grid-template-columns:minmax(0,1fr)}.facts{grid-template-columns:repeat(3,minmax(0,1fr))}.facts b{font-size:18px}.fig{min-height:320px}.coupon,.final{grid-template-columns:minmax(0,1fr)}table{font-size:14px}.stack thead{display:none}.stack tr{display:grid;padding-block:10px;border-bottom:1px solid var(--rule)}.stack td{border:0;padding:3px 0}.stack td::before{content:attr(data-l)"：";color:var(--soft);font-weight:500}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
 </style>
@@ -135,7 +135,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-betw
 
 <header class="band" id="top"><div class="wrap hero">
 <div>
-<span class="tag">mecango・屹登股份有限公司｜研發原廠 黑快馬</span>
+<span class="tag">mecango・屹登股份有限公司</span>
 <h1>讓客人<em>幫你找客人</em>，生意自己長大</h1>
 <p class="lede">廣告費一停，客人就斷？mecango 把每一位 LINE 會員變成你的推薦入口：分享優惠券、邀朋友玩遊戲、推薦就有獎勵，會員帶會員，新客自己上門。</p>
 <div class="cta"><a class="btn js-line" href="https://liff.line.me/2000189532-mPbqGd5y/subscribe-3q5l5619" target="_blank" rel="noopener">加 LINE，先體驗一次裂變</a><a class="btn ghost" href="#calc">試算我的會員成長</a></div>
@@ -219,7 +219,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-betw
 <thead><tr><th>上線之後要面對的事</th><th>自己用 AI 做</th><th>mecango</th></tr></thead>
 <tbody>
 <tr><td>新客從哪裡來</td><td>做得出功能，客人還是要自己找</td><td class="us">專利裂變機制，會員帶會員</td></tr>
-<tr><td>LINE 規則改版、主機、資安</td><td>自己追、自己修</td><td class="us">研發原廠持續維護，另有技術客服</td></tr>
+<tr><td>LINE 規則改版、主機、資安</td><td>自己追、自己修</td><td class="us">原廠持續維護，另有技術客服</td></tr>
 <tr><td>金流與對帳</td><td>自己串接、自己申請</td><td class="us">LINE Pay、街口、Apple Pay 等已整合</td></tr>
 <tr><td>POS 與出單硬體</td><td>另外找、另外整合</td><td class="us">POS 機、出單機、標籤機整套導入</td></tr>
 <tr><td>有沒有人用過</td><td>從零開始試</td><td class="us">80 個以上品牌的實際導入經驗</td></tr>
@@ -242,7 +242,6 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-betw
 <h2>為什麼可以放心交給我們</h2>
 <div class="trust">
 <div><h3>屹登股份有限公司</h3><p>旗下三個品牌：mecango 會員裂變系統、揪攤集跨品牌消費聯盟、呼叫小K 媒體行銷。系統、聯盟、行銷一條龍。</p></div>
-<div><h3>研發原廠：黑快馬</h3><p>系統由黑快馬股份有限公司研發。黑快馬的前身成立於 2000 年，是台灣的軟體研發原廠，旗下 SaaS 產品線服務超過一萬家企業客戶。</p></div>
 <div><h3>裂變機制取得專利</h3><p>已取得中華民國專利證書，並有發明專利申請中：「裂變式會員增加方法」（申請號 112136783）、「子母式客服關係管理系統」（申請號 112136094）。</p></div>
 <div><h3>由我陪你導入</h3><p>從選單設計、優惠與推薦獎勵規劃，到上線後的活動檢視，我會一對一陪你把系統用起來，而不是交了帳號就結束。</p></div>
 </div>
@@ -291,7 +290,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-betw
 
 <footer><div class="wrap">
 <span>明哲 MOMO｜mecango LINE 會員裂變導入顧問｜最後更新：2026-11-25</span>
-<span>品牌與服務：屹登股份有限公司（mecango）｜系統研發：黑快馬股份有限公司</span>
+<span>品牌與服務：屹登股份有限公司（mecango）</span>
 </div></footer>
 
 <script>
@@ -309,11 +308,11 @@ const drawTree=()=>{
   for(let l=0;l<levels;l++){const n=2**l;for(let i=0;i<n;i++){const x=W*(i+.5)/n+(l?(rnd()-.5)*W/n*.25:0);nodes.push({l,i,x,y:top+l*gap})}}
   const at=(l,i)=>nodes.find(n=>n.l===l&&n.i===i);
   let lines='',dots='';
-  for(const n of nodes){if(n.l){const p=at(n.l-1,n.i>>1);lines+=`<path d="M${p.x},${p.y} C${p.x},${(p.y+n.y)/2} ${n.x},${(p.y+n.y)/2} ${n.x},${n.y}" stroke="rgba(255,255,255,.35)" stroke-width="2" fill="none"/>`}
+  for(const n of nodes){if(n.l){const p=at(n.l-1,n.i>>1);lines+=`<path d="M${p.x},${p.y} C${p.x},${(p.y+n.y)/2} ${n.x},${(p.y+n.y)/2} ${n.x},${n.y}" stroke="rgba(10,74,51,.28)" stroke-width="2" fill="none"/>`}
     const r=Math.max(5,15-n.l*2.6),c=n.l===0?'#ffd23f':'#06c755',d=reduce?0:n.l*.35;
-    dots+=`<g style="opacity:${reduce?1:0};animation:${reduce?'none':`pop .5s ${d}s forwards`}"><circle cx="${n.x}" cy="${n.y+2}" r="${r}" fill="rgba(0,0,0,.25)"/><circle cx="${n.x}" cy="${n.y}" r="${r}" fill="${c}"/><circle cx="${n.x-r*.3}" cy="${n.y-r*.3}" r="${r*.35}" fill="rgba(255,255,255,.45)"/></g>`}
-  const labels=[];for(let l=0;l<levels;l++)labels.push(`<text x="14" y="${top+l*gap+5}" fill="#bfe0cf" font-size="13">${l?`第 ${l} 輪　${2**l} 人`:'1 位會員'}</text>`);
-  s.innerHTML=`<style>@keyframes pop{to{opacity:1}}text{paint-order:stroke;stroke:#0a4a33;stroke-width:4px}</style>${lines}${dots}${labels.join('')}`;
+    dots+=`<g style="opacity:${reduce?1:0};animation:${reduce?'none':`pop .5s ${d}s forwards`}"><circle cx="${n.x}" cy="${n.y+2}" r="${r}" fill="rgba(10,74,51,.12)"/><circle cx="${n.x}" cy="${n.y}" r="${r}" fill="${c}"/><circle cx="${n.x-r*.3}" cy="${n.y-r*.3}" r="${r*.35}" fill="rgba(255,255,255,.6)"/></g>`}
+  const labels=[];for(let l=0;l<levels;l++)labels.push(`<text x="14" y="${top+l*gap+5}" fill="#4a5d55" font-size="13">${l?`第 ${l} 輪　${2**l} 人`:'1 位會員'}</text>`);
+  s.innerHTML=`<style>@keyframes pop{to{opacity:1}}text{paint-order:stroke;stroke:#e8f6ee;stroke-width:4px}</style>${lines}${dots}${labels.join('')}`;
 };
 const ro=new ResizeObserver(drawTree);ro.observe(s);
 

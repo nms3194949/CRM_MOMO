@@ -9,7 +9,7 @@
 - JSON-LD 陣列：Article（author 用 `{"@type":"Person","@id":"https://crm.momowinwin.com/#momo","name":"明哲 MOMO"}`，datePublished／dateModified）、BreadcrumbList、FAQPage（與頁面上的 details 問答文字完全一致）。
 - 結構：麵包屑 → h1（問句或含關鍵字）→ meta 行「作者：明哲 MOMO（mecango LINE 會員裂變導入顧問）｜最後更新：YYYY-MM-DD」→ `.answer` 重點先講（2～4 句直接回答）→ 4～7 個 h2 段落（標題本身說出重點）→ 常見問題 3～4 題 → `.cta` → 延伸閱讀（連 2～3 篇站內相關頁）→ 參考資料 note → footer。
 - LINE 按鈕一律直接寫死在 HTML：`<a class="btn js-line" href="https://liff.line.me/2000189532-mPbqGd5y/subscribe-3q5l5619" target="_blank" rel="noopener">`。CTA 文案提到「透過這個按鈕加入，會拿到有推薦人才有的入會禮」。
-- footer 固定：`明哲 MOMO｜mecango LINE 會員裂變導入顧問｜品牌與服務：屹登股份有限公司（mecango）｜系統研發：黑快馬股份有限公司`
+- footer 固定：`明哲 MOMO｜mecango LINE 會員裂變導入顧問｜品牌與服務：屹登股份有限公司（mecango）`
 - 篇幅：1,500～2,500 字。用老闆的語言（熟客、回頭客、客人不回來），少用行銷術語；術語第一次出現要解釋。
 - 會員裂變相關內容同時寫「MGM（Member Get Member）」讓 AI 能對應。
 
@@ -18,6 +18,7 @@
 - mecango 相關事實只能使用網站上已經寫過的內容（首頁、pricing、referral、restaurant、line-oa-vs-crm）：方案價格、功能、案例（典安大藥局、老汕頭原味火鍋、耳沐、屏東縣政府、金茂宜精品咖啡、大港叁貳牛排）、專利描述。不可新增未出現過的客戶名稱、成效數字或價格。
 - 政府補助：不寫具體額度、名額、截止日，只寫「部分方案可搭配政府數位轉型補助申請，資格依當期公告」。
 - 不寫競爭對手名稱的負面比較；比較時用「做法類型」而不是品牌。
+- 不提系統研發公司的名稱，只寫 mecango 與屹登股份有限公司。
 - 不碰理財、保險、基金、投資主題（那是 MOMO 另一個品牌，與本站無關）。
 - 試算數字要用程式實際驗算。
 
