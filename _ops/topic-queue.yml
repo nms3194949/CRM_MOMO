@@ -1,0 +1,51 @@
+# CRM 網站題目清單。status: todo / pr（已開 PR 等審核）/ published / skip
+# 每次自動執行挑第一個 todo；趨勢雷達可在最後新增題目（附 source）。
+topics:
+  - slug: beauty
+    title: 美業、美甲怎麼用 LINE 預約系統？24 小時自動接單與回訪
+    type: 產業頁
+    status: todo
+  - slug: grow-line-friends
+    title: 怎麼增加 LINE 官方帳號好友？實體店家 8 個做法
+    type: 問題頁
+    status: todo
+  - slug: win-back
+    title: 熟客不回來怎麼辦？沉睡客喚醒的自動化做法
+    type: 問題頁
+    status: todo
+  - slug: clinic
+    title: 醫美、診所的 LINE 會員經營：預約、回診提醒與分眾
+    type: 產業頁
+    status: todo
+  - slug: pharmacy
+    title: 藥局、零售店的 LINE 會員系統：付費會員與回購
+    type: 產業頁
+    status: todo
+  - slug: coupons
+    title: LINE 優惠券怎麼設計才會被使用？
+    type: 問題頁
+    status: todo
+  - slug: games
+    title: LINE 轉盤、刮刮樂互動遊戲行銷：怎麼做才能帶來新客
+    type: 功能頁
+    status: todo
+  - slug: small-shop
+    title: 小店需要 LINE CRM 嗎？好友很少值得導入嗎
+    type: 問題頁
+    status: todo
+  - slug: points
+    title: LINE 集點卡和會員系統集點差在哪？點數轉贈怎麼用
+    type: 功能頁
+    status: todo
+  - slug: save-message-cost
+    title: LINE 群發訊息費太貴怎麼辦？分眾推播省錢做法
+    type: 問題頁
+    status: todo
+  - slug: chain
+    title: 連鎖品牌怎麼整合總店與分店的 LINE 會員？
+    type: 產業頁
+    status: todo
+  - slug: education
+    title: 補習班、課程的 LINE 會員經營：報名、續課與轉介紹
+    type: 產業頁
+    status: todo
