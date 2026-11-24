@@ -1,6 +1,6 @@
-:root{color-scheme:light dark;--bg:light-dark(#ffffff,#0b1511);--ink:light-dark(#10201a,#e8f2ec);--soft:light-dark(#4a5d55,#a9bdb3);--deep:light-dark(#0a4a33,#0f3d2c);--line:#06c755;--lineink:light-dark(#058a3c,#3ee282);--yel:#ffd23f;--panel:light-dark(#f2f8f4,#13221b);--rule:light-dark(#d6e5dc,#24392f)}
+:root{color-scheme:light;--bg:#ffffff;--ink:#10201a;--soft:#4a5d55;--deep:#e8f6ee;--line:#06c755;--lineink:#058a3c;--yel:#ffd23f;--panel:#f4faf6;--rule:#d6e5dc}
 :root[data-theme=light]{color-scheme:light}
-:root[data-theme=dark]{color-scheme:dark}
+:root[data-theme=dark]{color-scheme:light}
 *{box-sizing:border-box;min-width:0}
 body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.75 "Noto Sans TC",system-ui,sans-serif;overflow-x:clip}
 a{color:var(--lineink)}
@@ -26,7 +26,7 @@ th{color:var(--soft);font-size:14px}
 .stat b{display:block;font-size:26px;color:var(--lineink);font-weight:900;white-space:nowrap}
 details{border-bottom:1px solid var(--rule);padding:12px 0}
 summary{cursor:pointer;font-weight:700}
-.cta{background:var(--deep);color:#f2fbf6;border-radius:20px;padding:26px;margin:48px 0 0}
+.cta{background:var(--deep);color:var(--ink);border:1px solid var(--rule);border-radius:20px;padding:26px;margin:48px 0 0}
 .cta h2{margin-top:0}
 .note{font-size:14px;color:var(--soft)}
 footer{border-top:1px solid var(--rule);padding:22px max(5vw,16px);font-size:14px;color:var(--soft)}

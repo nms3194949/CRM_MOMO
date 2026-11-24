@@ -20,12 +20,12 @@
 /* VOICE occasion: a confident shop-owner landing page, warm and plain-spoken
    IDEA a LINE coupon that gets passed hand to hand and multiplies
    PICTURE one member at the root branching into a growing tree of new members, drawn live
-   COLOUR white ground, deep green #0a4a33 fields, LINE green #06c755, coupon yellow #ffd23f
+   COLOUR white ground, pale mint #e8f6ee bands, LINE green #06c755, coupon yellow #ffd23f
    TYPE Noto Sans TC 900 for titles + Noto Sans TC 400/500 text
    LAYOUT laptop: title block left over the fission tree band; phone: title, tree, button */
-:root{color-scheme:light dark;--bg:light-dark(#ffffff,#0b1511);--ink:light-dark(#10201a,#e8f2ec);--soft:light-dark(#4a5d55,#a9bdb3);--deep:light-dark(#0a4a33,#0f3d2c);--deepink:#f2fbf6;--line:#06c755;--lineink:light-dark(#058a3c,#3ee282);--yel:#ffd23f;--panel:light-dark(#f2f8f4,#13221b);--rule:light-dark(#d6e5dc,#24392f)}
+:root{color-scheme:light;--bg:#ffffff;--ink:#10201a;--soft:#4a5d55;--deep:#e8f6ee;--deepink:#10201a;--line:#06c755;--lineink:#058a3c;--yel:#ffd23f;--panel:#f4faf6;--rule:#d6e5dc}
 :root[data-theme=light]{color-scheme:light}
-:root[data-theme=dark]{color-scheme:dark}
+:root[data-theme=dark]{color-scheme:light}
 *{box-sizing:border-box;min-width:0}
 html{scroll-padding-top:72px;scroll-behavior:smooth}
 body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 "Noto Sans TC",system-ui,sans-serif;overflow-x:clip}
@@ -62,7 +62,7 @@ nav .btn{min-height:44px;padding:0 18px;font-size:15px}
 .fig>svg{position:absolute;inset:0;width:100%;height:100%}
 .figcap{position:absolute;left:18px;bottom:14px;color:var(--deepink);font-size:14px;opacity:.85}
 .deep{background:var(--deep);color:var(--deepink)}
-.deep .lede{color:#bfe0cf}
+.deep .lede{color:var(--soft)}
 .pains{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:30px}
 .pains div{border-left:3px solid var(--yel);padding:4px 0 4px 16px}
 .pains b{font-size:19px;display:block}
@@ -100,7 +100,7 @@ input[type=range]{width:100%;height:44px;accent-color:var(--line)}
 .feat h3{margin-bottom:6px}
 .feat p{color:var(--soft);font-size:15px;margin:0}
 .mods{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
-.mods span{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.25);border-radius:999px;padding:8px 16px;font-weight:500}
+.mods span{background:#fff;border:1px solid var(--rule);border-radius:999px;padding:8px 16px;font-weight:500}
 .scroll{overflow-x:auto}
 table{width:100%;border-collapse:collapse;margin-top:24px;font-size:15px}
 th,td{text-align:left;padding:12px 10px;border-bottom:1px solid var(--rule);vertical-align:top}
@@ -309,11 +309,11 @@ const drawTree=()=>{
   for(let l=0;l<levels;l++){const n=2**l;for(let i=0;i<n;i++){const x=W*(i+.5)/n+(l?(rnd()-.5)*W/n*.25:0);nodes.push({l,i,x,y:top+l*gap})}}
   const at=(l,i)=>nodes.find(n=>n.l===l&&n.i===i);
   let lines='',dots='';
-  for(const n of nodes){if(n.l){const p=at(n.l-1,n.i>>1);lines+=`<path d="M${p.x},${p.y} C${p.x},${(p.y+n.y)/2} ${n.x},${(p.y+n.y)/2} ${n.x},${n.y}" stroke="rgba(255,255,255,.35)" stroke-width="2" fill="none"/>`}
+  for(const n of nodes){if(n.l){const p=at(n.l-1,n.i>>1);lines+=`<path d="M${p.x},${p.y} C${p.x},${(p.y+n.y)/2} ${n.x},${(p.y+n.y)/2} ${n.x},${n.y}" stroke="rgba(10,74,51,.28)" stroke-width="2" fill="none"/>`}
     const r=Math.max(5,15-n.l*2.6),c=n.l===0?'#ffd23f':'#06c755',d=reduce?0:n.l*.35;
-    dots+=`<g style="opacity:${reduce?1:0};animation:${reduce?'none':`pop .5s ${d}s forwards`}"><circle cx="${n.x}" cy="${n.y+2}" r="${r}" fill="rgba(0,0,0,.25)"/><circle cx="${n.x}" cy="${n.y}" r="${r}" fill="${c}"/><circle cx="${n.x-r*.3}" cy="${n.y-r*.3}" r="${r*.35}" fill="rgba(255,255,255,.45)"/></g>`}
-  const labels=[];for(let l=0;l<levels;l++)labels.push(`<text x="14" y="${top+l*gap+5}" fill="#bfe0cf" font-size="13">${l?`第 ${l} 輪　${2**l} 人`:'1 位會員'}</text>`);
-  s.innerHTML=`<style>@keyframes pop{to{opacity:1}}text{paint-order:stroke;stroke:#0a4a33;stroke-width:4px}</style>${lines}${dots}${labels.join('')}`;
+    dots+=`<g style="opacity:${reduce?1:0};animation:${reduce?'none':`pop .5s ${d}s forwards`}"><circle cx="${n.x}" cy="${n.y+2}" r="${r}" fill="rgba(10,74,51,.12)"/><circle cx="${n.x}" cy="${n.y}" r="${r}" fill="${c}"/><circle cx="${n.x-r*.3}" cy="${n.y-r*.3}" r="${r*.35}" fill="rgba(255,255,255,.6)"/></g>`}
+  const labels=[];for(let l=0;l<levels;l++)labels.push(`<text x="14" y="${top+l*gap+5}" fill="#4a5d55" font-size="13">${l?`第 ${l} 輪　${2**l} 人`:'1 位會員'}</text>`);
+  s.innerHTML=`<style>@keyframes pop{to{opacity:1}}text{paint-order:stroke;stroke:#e8f6ee;stroke-width:4px}</style>${lines}${dots}${labels.join('')}`;
 };
 const ro=new ResizeObserver(drawTree);ro.observe(s);
 
