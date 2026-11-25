@@ -205,6 +205,10 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-betw
 <div class="feat"><h3>互動遊戲</h3><p>轉盤、扭蛋、刮刮樂、拉霸、盲盒、翻卡，結合邀請好友獎勵。</p></div>
 <div class="feat"><h3>按讚與個人化分享券</h3><p>好友按讚集滿就發禮；被分享的券一使用，推薦人立即得獎。</p></div>
 </div>
+<div style="margin-top:36px;padding:28px 16px;border-radius:24px;background:var(--panel);border:1px solid var(--rule)">
+<h3 style="text-align:center;font-size:22px;margin-bottom:18px">會員分級：熟客一打開 LINE，看到的就不一樣</h3>
+<div data-line-demo></div>
+</div>
 </div></section>
 
 <section class="band deep"><div class="wrap">
@@ -343,5 +347,6 @@ const calc=()=>{
 ids.forEach(k=>el[k].addEventListener('input',calc));calc();
 }
 </script>
+<script src="assets/line-demo.js" defer></script>
 </body>
 </html>
