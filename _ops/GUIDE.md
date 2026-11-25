@@ -5,11 +5,11 @@
 
 ## 頁面格式（照 restaurant/、pricing/、referral/ 的寫法，新頁面先完整讀一篇當範本）
 - 路徑：`<slug>/index.html`，引用 `../assets/article.css`，不要改 CSS 或首頁版型。
-- `<title>` 2～6 個字；meta description 120 字內、含主要關鍵字；canonical 與 og:url 為 `https://crm.momowinwin.com/<slug>/`；meta author「明哲 MOMO」。
+- 網站名稱：「客帶客｜LINE 會員裂變」。`<title>` 格式「頁面主題（2～8 個字）｜客帶客」；加 `<meta property="og:site_name" content="客帶客｜LINE 會員裂變">`；左上角 brand 文字為「客帶客｜LINE 會員裂變」；meta description 120 字內、含主要關鍵字；canonical 與 og:url 為 `https://crm.momowinwin.com/<slug>/`；meta author「明哲 MOMO」。
 - JSON-LD 陣列：Article（author 用 `{"@type":"Person","@id":"https://crm.momowinwin.com/#momo","name":"明哲 MOMO"}`，datePublished／dateModified）、BreadcrumbList、FAQPage（與頁面上的 details 問答文字完全一致）。
 - 結構：麵包屑 → h1（問句或含關鍵字）→ meta 行「作者：明哲 MOMO（mecango LINE 會員裂變導入顧問）｜最後更新：YYYY-MM-DD」→ `.answer` 重點先講（2～4 句直接回答）→ 4～7 個 h2 段落（標題本身說出重點）→ 常見問題 3～4 題 → `.cta` → 延伸閱讀（連 2～3 篇站內相關頁）→ 參考資料 note → footer。
 - LINE 按鈕一律直接寫死在 HTML：`<a class="btn js-line" href="https://liff.line.me/2000189532-mPbqGd5y/subscribe-3q5l5619" target="_blank" rel="noopener">`。CTA 文案提到「透過這個按鈕加入，會拿到有推薦人才有的入會禮」。
-- footer 固定：`明哲 MOMO｜mecango LINE 會員裂變導入顧問｜品牌與服務：屹登股份有限公司（mecango）`
+- footer 固定：`客帶客｜LINE 會員裂變｜作者：明哲 MOMO（mecango LINE 會員裂變導入顧問）｜品牌與服務：屹登股份有限公司（mecango）`
 - 篇幅：1,500～2,500 字。用老闆的語言（熟客、回頭客、客人不回來），少用行銷術語；術語第一次出現要解釋。
 - 會員裂變相關內容同時寫「MGM（Member Get Member）」讓 AI 能對應。
 
