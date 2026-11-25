@@ -7,12 +7,14 @@
 - 路徑：`<slug>/index.html`，引用 `../assets/article.css`，不要改 CSS 或首頁版型。
 - 網站名稱：「客帶客｜LINE 會員裂變」。`<title>` 格式「頁面主題（2～8 個字）｜客帶客」；加 `<meta property="og:site_name" content="客帶客｜LINE 會員裂變">`；左上角 brand 文字為「客帶客｜LINE 會員裂變」；meta description 120 字內、含主要關鍵字；canonical 與 og:url 為 `https://crm.momowinwin.com/<slug>/`；meta author「明哲 MOMO」。
 - JSON-LD 陣列：Article（author 用 `{"@type":"Person","@id":"https://crm.momowinwin.com/#momo","name":"明哲 MOMO"}`，datePublished／dateModified）、BreadcrumbList、FAQPage（與頁面上的 details 問答文字完全一致）。
-- 結構：麵包屑 → h1（問句或含關鍵字）→ meta 行「作者：明哲 MOMO（Mecango 會員裂變導入顧問）｜最後更新：YYYY-MM-DD」→ `.answer` 重點先講（2～4 句直接回答）→ 4～7 個 h2 段落（標題本身說出重點）→ 常見問題 3～4 題 → `.cta` → 延伸閱讀（連 2～3 篇站內相關頁）→ 參考資料 note → footer。
+- 結構：麵包屑 → h1（問句或含關鍵字）→ meta 行「作者：明哲 MOMO（Mecango 會員裂變導入顧問）｜最後更新：YYYY-MM-DD」→ `.answer` 重點先講（2～4 句直接回答）→ 「本文重點」目錄 → 4～7 個 h2 段落（標題本身說出重點）→ 常見問題 3～4 題 → `.cta` → 延伸閱讀（連 2～3 篇站內相關頁）→ 參考資料 note → footer。
 - 導覽列固定寫法（照現有頁面）：`<nav><a class="brand" href="../">客帶客｜LINE 會員裂變</a><span class="navlinks"><a href="../guides/#industry">產業</a><a href="../guides/">文章</a></span><a class="btn js-line" ...>加 LINE 諮詢</a></nav>`。
 - LINE 按鈕一律直接寫死在 HTML：`<a class="btn js-line" href="https://liff.line.me/2000189532-mPbqGd5y/subscribe-3q5l5619" target="_blank" rel="noopener">`。CTA 文案提到「透過這個按鈕加入，會拿到有推薦人才有的入會禮」。
 - footer 固定：`客帶客｜LINE 會員裂變｜作者：明哲 MOMO（Mecango 會員裂變導入顧問）｜品牌與服務：屹登股份有限公司（Mecango）`
 - 篇幅：1,500～2,500 字。用老闆的語言（熟客、回頭客、客人不回來），少用行銷術語；術語第一次出現要解釋。
 - 會員裂變相關內容同時寫「MGM（Member Get Member）」讓 AI 能對應。
+- 「本文重點」目錄：緊接在 `.answer` 之後，格式 `<nav class="toc" aria-label="本文重點"><b>本文重點</b><ol><li><a href="#s1">第一個 h2 標題</a></li>…</ol></nav>`；每個 h2 加 `id="s1"`、`id="s2"`…依序編號（cta 裡的 h2 不編號、不列入）。
+- 同義詞：讀者會用不同說法搜尋，文章要自然帶入，但不要硬塞：LINE 官方帳號第一次出現時寫「LINE 官方帳號（LINE OA）」，相關段落可提到舊稱 LINE@、口語「官方 LINE」；會員系統可交替使用「LINE CRM」「LINE 會員系統」「會員系統」；推薦相關用「推薦好友」「會員帶會員」「會員裂變（MGM）」。每篇 meta description 至少放一個同義說法。
 
 ## 事實與查證
 - 每篇至少 2 個附網址的外部來源（LINE 官方、政府機關、主要媒體如數位時代、iThome、經濟日報優先），資料來源寫在頁尾 note。數字一律註明日期或「截至 YYYY 年 M 月」。
@@ -33,6 +35,12 @@
 
 ## 客製化功能頁
 - `custom/` 是明哲 MOMO 個人的客製化開發評估與報價頁，不要修改它。文章提到標準功能做不到的特殊流程時，可以連到 `../custom/`，並說明客製開發由明哲 MOMO 個人提供、不包含在 Mecango 標準方案內、依需求個別報價。不可寫出客製開發的價格或保證一定能做。
+
+## 支柱文章
+- `line-member-guide/` 是全站支柱文章「門店 LINE 會員經營完整指南 2026」，所有文章都是它的子主題。
+- 每寫一篇新文章，在支柱文章最相關的段落補一句話加連結（產業頁加到「各產業怎麼做」的 `.glist` 卡片），並更新它的 dateModified、「最後更新」與 sitemap lastmod。不要改動支柱文章的整體結構。
+- 新文章的延伸閱讀或內文至少連一次支柱文章 `../line-member-guide/`。
+- 每年 1 月第一次執行時，把支柱文章標題、og:title、meta description 與 llms.txt 裡的年份改成新年度，網址不變，並檢查內容事實是否仍正確。
 
 ## 每篇完成後要同步更新
 1. `sitemap.xml` 新增 `<url>`（lastmod 今天）；修改舊頁面時更新該頁 lastmod。

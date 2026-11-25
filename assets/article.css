@@ -42,3 +42,12 @@ nav .navlinks a:hover{color:var(--ink)}
 .glist small{display:block;font-size:13px;color:var(--soft);margin-top:6px}
 article.wide{max-width:1040px}
 @media(max-width:600px){nav .navlinks{font-size:14px;gap:12px}}
+.toc{border:1px solid var(--rule);border-radius:14px;padding:14px 18px;margin:20px 0;background:#fff}
+.toc b{display:block;font-size:15px;margin-bottom:6px}
+.toc ol{margin:0;padding-left:1.4em;font-size:15px;line-height:1.9}
+.toc a{color:var(--lineink);text-decoration:none}
+.toc a:hover{text-decoration:underline}
+h2[id]{scroll-margin-top:16px}
+.feature-pillar{display:block;border:2px solid var(--line);border-radius:18px;padding:18px 20px;margin:18px 0 6px;text-decoration:none;color:var(--ink);background:var(--panel)}
+.feature-pillar b{display:block;font-size:20px;margin-bottom:4px}
+.feature-pillar span{color:var(--soft);font-size:15px}

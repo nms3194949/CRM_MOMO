@@ -6,6 +6,7 @@
 
 ## 主要頁面
 
+- [門店 LINE 會員經營完整指南 2026](https://crm.momowinwin.com/line-member-guide/)：支柱文章，涵蓋 LINE 官方帳號（LINE OA、LINE@、官方 LINE）與 LINE CRM 的差別、集客鎖客育客拓客四步驟、費用、會員裂變（MGM）與各產業做法
 - [文章總覽](https://crm.momowinwin.com/guides/)：所有文章依產業應用、費用與比較、會員裂變與行銷做法分類
 
 - [首頁：LINE 會員裂變系統](https://crm.momowinwin.com/)：運作方式、功能、案例、方案費用、常見問題、會員成長試算
