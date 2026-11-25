@@ -8,6 +8,7 @@
 - 網站名稱：「客帶客｜LINE 會員裂變」。`<title>` 格式「頁面主題（2～8 個字）｜客帶客」；加 `<meta property="og:site_name" content="客帶客｜LINE 會員裂變">`；左上角 brand 文字為「客帶客｜LINE 會員裂變」；meta description 120 字內、含主要關鍵字；canonical 與 og:url 為 `https://crm.momowinwin.com/<slug>/`；meta author「明哲 MOMO」。
 - JSON-LD 陣列：Article（author 用 `{"@type":"Person","@id":"https://crm.momowinwin.com/#momo","name":"明哲 MOMO"}`，datePublished／dateModified）、BreadcrumbList、FAQPage（與頁面上的 details 問答文字完全一致）。
 - 結構：麵包屑 → h1（問句或含關鍵字）→ meta 行「作者：明哲 MOMO（mecango LINE 會員裂變導入顧問）｜最後更新：YYYY-MM-DD」→ `.answer` 重點先講（2～4 句直接回答）→ 4～7 個 h2 段落（標題本身說出重點）→ 常見問題 3～4 題 → `.cta` → 延伸閱讀（連 2～3 篇站內相關頁）→ 參考資料 note → footer。
+- 導覽列固定寫法（照現有頁面）：`<nav><a class="brand" href="../">客帶客｜LINE 會員裂變</a><span class="navlinks"><a href="../guides/#industry">產業</a><a href="../guides/">文章</a></span><a class="btn js-line" ...>加 LINE 諮詢</a></nav>`。
 - LINE 按鈕一律直接寫死在 HTML：`<a class="btn js-line" href="https://liff.line.me/2000189532-mPbqGd5y/subscribe-3q5l5619" target="_blank" rel="noopener">`。CTA 文案提到「透過這個按鈕加入，會拿到有推薦人才有的入會禮」。
 - footer 固定：`客帶客｜LINE 會員裂變｜作者：明哲 MOMO（mecango LINE 會員裂變導入顧問）｜品牌與服務：屹登股份有限公司（mecango）`
 - 篇幅：1,500～2,500 字。用老闆的語言（熟客、回頭客、客人不回來），少用行銷術語；術語第一次出現要解釋。
@@ -25,6 +26,7 @@
 ## 每篇完成後要同步更新
 1. `sitemap.xml` 新增 `<url>`（lastmod 今天）；修改舊頁面時更新該頁 lastmod。
 2. `llms.txt` 的「主要頁面」新增一行。
-3. 首頁 `index.html`「延伸閱讀」區塊新增一張 `<a class="feat" ...>` 卡片。
-4. 挑 1～2 篇主題相關的舊頁面，在其「延伸閱讀」行加上新頁連結。
-5. 用 python 驗證所有頁面的 JSON-LD 都能 json.loads；確認所有站內連結指到存在的資料夾。
+3. 文章總覽 `guides/index.html`：依類型把新頁面卡片加到對應區塊的最前面（產業頁 → `<!-- list:industry -->`；費用、比較、LINE 官方帳號相關 → `<!-- list:basics -->`；會員裂變、推薦、優惠券、遊戲、回流等做法 → `<!-- list:growth -->`），格式照既有卡片（標題、一句說明、日期），並更新該頁 meta 行與 CollectionPage 的 dateModified。
+4. 首頁 `index.html`「最新文章」區塊：新卡片加在最前面，只保留最新 4 張（移除最舊的一張）。
+5. 挑 1～2 篇主題相關的舊頁面，在其「延伸閱讀」行加上新頁連結。
+6. 用 python 驗證所有頁面的 JSON-LD 都能 json.loads；確認所有站內連結指到存在的資料夾。
