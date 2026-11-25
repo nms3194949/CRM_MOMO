@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>方案試算｜客帶客</title>
+<meta name="description" content="勾選你需要的 LINE 會員功能，馬上知道適合 Mecango 哪個方案、首年和次年大概要花多少，包含 LINE 官方帳號訊息費。也可以勾選其他需求，預約碰面諮詢。">
+<meta name="author" content="明哲 MOMO">
+<link rel="canonical" href="https://crm.momowinwin.com/plan/">
+<meta property="og:title" content="我適合哪個方案？LINE 會員系統方案與費用試算｜客帶客">
+<meta property="og:url" content="https://crm.momowinwin.com/plan/">
+<meta property="og:site_name" content="客帶客｜LINE 會員裂變">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/article.css">
+<style>
+.tool{max-width:1180px;margin:0 auto;padding:clamp(24px,4vw,48px) max(4vw,16px) 40px}
+.tool h1{margin-top:6px}
+.lay{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:24px;align-items:start;margin-top:18px}
+.box{background:var(--panel);border:1px solid var(--rule);border-radius:18px;padding:18px 20px;margin-bottom:16px}
+.box h2{font-size:20px;margin:0 0 4px}
+.box>p{margin:0 0 12px;font-size:14px;color:var(--soft)}
+.row2{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));gap:12px}
+label.f{display:grid;gap:6px;font-weight:700;font-size:15px}
+.f input,.f select,textarea{font:inherit;font-size:16px;padding:10px 12px;border:1px solid var(--rule);border-radius:10px;background:#fff;color:var(--ink);width:100%}
+textarea{min-height:90px;resize:vertical}
+.grp{margin-top:12px}
+.grp h3{font-size:15px;margin:0 0 6px;color:var(--soft);font-weight:700}
+.chk{display:flex;gap:10px;align-items:flex-start;padding:9px 10px;border-radius:10px;cursor:pointer;min-height:44px}
+.chk:hover{background:#fff}
+.chk input{width:20px;height:20px;margin-top:2px;accent-color:#06c755;flex:none}
+.chk span{font-size:15px;line-height:1.45}
+.chk small{display:block;color:var(--soft);font-size:13px}
+.tag{display:inline-block;font-size:12px;font-weight:700;border-radius:999px;padding:1px 8px;margin-left:6px;vertical-align:1px;white-space:nowrap}
+.t0{background:#fff4d6;color:#7a5a00}.t1{background:#f1e6ff;color:#5b2a91}.t2{background:#dff6e7;color:#0b6b35}.t3{background:#ddefff;color:#0b4f8a}.tx{background:#eee;color:#444}
+.res{position:sticky;top:16px;background:#fff;border:2px solid #06c755;border-radius:20px;padding:20px}
+.res .lab{font-size:14px;color:var(--soft)}
+.res .plan{font-size:clamp(30px,4vw,40px);font-weight:900;line-height:1.1;margin:2px 0 6px}
+.res .big{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:12px 0}
+.res .big div{background:var(--panel);border-radius:12px;padding:10px;font-size:13px;color:var(--soft)}
+.res .big b{display:block;font-size:clamp(18px,2.2vw,22px);color:var(--ink);white-space:nowrap}
+.res table{font-size:14px;margin:8px 0}
+.res td{padding:6px 4px}
+.res td:last-child{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
+.alt{background:#fffbea;border:1px solid #f3e2a0;border-radius:12px;padding:10px 12px;font-size:14px;margin:10px 0}
+.why{font-size:14px;color:var(--soft);margin:6px 0}
+.xq{font-size:14px;margin:8px 0}
+.acts{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+.btn2{display:inline-flex;align-items:center;min-height:46px;padding:0 20px;border-radius:999px;border:2px solid var(--ink);background:#fff;color:var(--ink);font:inherit;font-weight:700;cursor:pointer}
+.btn2:focus-visible,.chk input:focus-visible,.f input:focus-visible,.f select:focus-visible,textarea:focus-visible{outline:3px solid var(--yel);outline-offset:2px}
+#msg{font-size:14px;font-weight:700;color:var(--lineink);min-height:1.3em;margin-top:8px}
+#out{display:none;white-space:pre-wrap;border:1px dashed var(--rule);border-radius:10px;padding:10px;font-size:13px;margin-top:8px}
+.bar{display:none}
+@media(max-width:900px){.lay{grid-template-columns:minmax(0,1fr)}.res{position:static}.bar{display:flex;position:sticky;bottom:0;z-index:5;justify-content:space-between;align-items:center;gap:10px;background:#fff;border-top:2px solid #06c755;padding:10px 16px;font-size:14px}.bar b{font-size:17px}.bar a{color:var(--lineink);font-weight:700;white-space:nowrap}}
+</style>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"WebApplication","name":"LINE 會員系統方案與費用試算","url":"https://crm.momowinwin.com/plan/","applicationCategory":"BusinessApplication","operatingSystem":"Web","inLanguage":"zh-TW","isAccessibleForFree":true,"description":"勾選需要的 LINE 會員功能，試算適合的 Mecango 方案、首年與次年費用（含 LINE 官方帳號訊息費）。","author":{"@type":"Person","@id":"https://crm.momowinwin.com/#momo","name":"明哲 MOMO"}},
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首頁","item":"https://crm.momowinwin.com/"},{"@type":"ListItem","position":2,"name":"方案試算","item":"https://crm.momowinwin.com/plan/"}]}]</script>
+</head>
+<body>
+<nav><a class="brand" href="../">客帶客｜LINE 會員裂變</a><span class="navlinks"><a href="../guides/#industry">產業</a><a href="../guides/">文章</a></span><a class="btn js-line" href="https://liff.line.me/2000189532-mPbqGd5y/subscribe-3q5l5619" target="_blank" rel="noopener">加 LINE 諮詢</a></nav>
+<main class="tool">
+<div class="crumb"><a href="../">首頁</a> › 方案試算</div>
+<h1>我適合哪個方案？要花多少？</h1>
+<p class="meta">勾選你想要的功能，右邊馬上算出建議方案和費用。試算僅供參考，實際以正式報價為準。</p>
+
+<div class="lay">
+<div>
+<section class="box">
+<h2>1. 你的店</h2>
+<p>LINE 官方帳號的訊息費用依好友數和群發次數計算。</p>
+<div class="row2">
+<label class="f" for="ind">行業別<select id="ind"><option>餐飲</option><option>美業／美甲</option><option>醫美／診所</option><option>藥局／零售</option><option>課程／補習班</option><option>其他服務業</option></select></label>
+<label class="f" for="fr">目前 LINE 好友數<input id="fr" type="number" min="0" step="50" value="500" inputmode="numeric"></label>
+<label class="f" for="sd">每月群發次數<select id="sd"><option value="0">幾乎不群發</option><option value="1">1 次</option><option value="2" selected>2 次</option><option value="4">4 次</option><option value="8">8 次</option></select></label>
+</div>
+</section>
+
+<section class="box">
+<h2>2. 你需要哪些功能？</h2>
+<p>依 Mecango 官方方案表分級，版本越高功能越多。標籤顯示該功能從哪個版本開始提供。</p>
+<div id="feats"></div>
+</section>
+
+<section class="box">
+<h2>3. 加值模組</h2>
+<p>可以加在任何方案上，費用另計。</p>
+<div id="adds"></div>
+</section>
+
+<section class="box">
+<h2>4. 其他需求（碰面時一起討論）</h2>
+<p>這些項目需要依店家狀況另外評估報價，勾選後會一起帶進諮詢內容。</p>
+<div id="others"></div>
+<label class="f" for="note" style="margin-top:10px">想先讓我知道的事（選填）<textarea id="note" placeholder="例如：想做課程扣堂提醒、三家分店會員要共用、希望下個月開幕前上線。"></textarea></label>
+</section>
+</div>
+
+<aside class="res" id="res" aria-live="polite">
+<div class="lab">建議方案</div>
+<div class="plan" id="rPlan"></div>
+<div class="why" id="rWhy"></div>
+<div class="big">
+<div>首年<b id="rY1"></b></div>
+<div>次年起每年<b id="rY2"></b></div>
+<div>首年平均每月<b id="rM"></b></div>
+</div>
+<div class="scroll"><table><tbody id="rRows"></tbody></table></div>
+<div id="rAlt"></div>
+<div class="xq" id="rX"></div>
+<p class="note">金額未稅。Mecango 方案價格以屹登股份有限公司正式報價為準；LINE 官方帳號費用依 2026 年 11 月起的方案估算，以 LINE 公告為準。</p>
+<div class="acts">
+<button type="button" class="btn2" id="copy">複製試算結果</button>
+<a class="btn js-line" href="https://liff.line.me/2000189532-mPbqGd5y/subscribe-3q5l5619" target="_blank" rel="noopener">開啟 LINE 預約諮詢</a>
+</div>
+<div id="msg"></div>
+<div id="out"></div>
+<p class="note" style="margin-top:12px">複製後到 LINE 貼上傳給我，我會依你的需求安排碰面或線上諮詢。標準方案做不到的功能，可以參考<a href="../custom/">客製化功能報價</a>。</p>
+</aside>
+</div>
+</main>
+<div class="bar"><span>建議 <b id="bPlan"></b>・首年 <b id="bY1"></b></span><a href="#res">看明細</a></div>
+<footer>客帶客｜LINE 會員裂變｜作者：明哲 MOMO（Mecango 會員裂變導入顧問）｜品牌與服務：屹登股份有限公司（Mecango）</footer>
+<script>
+{
+const T=[{n:'輕巧版',s1:8000,s2:3000,c:15000,ssl:2000},{n:'微店版',s1:18000,s2:3000,c:36000,ssl:0},{n:'專業版',s1:18000,s2:3000,c:48000,ssl:0},{n:'營銷版',s1:18000,s2:3000,c:60000,ssl:0}];
+const F=[
+['基本經營',[['msg',0,'群發最新消息、關鍵字自動回覆','一對一即時客服、影音內容管理'],['data',0,'會員資料與消費紀錄','會員行為分析標籤、消費數據分析'],['store',0,'店家資料與付款設定','郵件／簡訊預設訊息、自動回應']]],
+['品牌門面',[['web',1,'品牌微網頁、自訂網頁',''],['menu',1,'圖文選單分級、動態圖卡','多元組合行銷公告圖卡'],['card',1,'個性化電子名片',''],['level',1,'會員等級管理','']]],
+['回購與優惠',[['coupon',2,'優惠券、生日禮券自動發送','優惠券／點數到期提醒、會員倍增優惠券'],['points',2,'消費集點兌換優惠',''],['checkin',2,'定期打卡獎勵',''],['survey',2,'分眾問卷與表單自動貼標',''],['set',2,'套餐銷售、一鍵多重訊息回應','']]],
+['會員裂變與進階行銷',[['share',3,'推薦好友：分享點數自動加好友','會員裂變的核心功能'],['like',3,'按讚裂變行銷','朋友按讚集滿即發禮'],['lottery',3,'抽獎活動行銷',''],['bonus',3,'紅利集點兌換、消費紅利折抵',''],['ec',3,'電商促銷活動',''],['bigdata',3,'會員大數據統計營銷',''],['invoice',3,'電子發票管理','']]]];
+const A=[['book','訂位預約','訂位、桌號場地、取號等候、訂位報表',18000],['pay','多元支付','LINE Pay、街口、Apple Pay、Google Pay、刷卡、分期',6000]];
+const O=['餐飲 POS 點餐','美業預約排班','線上購物商城','連鎖多店（總店／分店）管理','客製化報表或自動通知','政府數位轉型補助申請'];
+const DEF=new Set(['msg','data','coupon']);
+const tg=t=>`<span class="tag t${t}">${T[t].n}</span>`;
+document.getElementById('feats').innerHTML=F.map(([g,items])=>`<div class="grp"><h3>${g}</h3>${items.map(([id,t,l,d])=>`<label class="chk"><input type="checkbox" id="f-${id}" data-t="${t}" data-l="${l}"${DEF.has(id)?' checked':''}><span>${l}${tg(t)}${d?`<small>${d}</small>`:''}</span></label>`).join('')}</div>`).join('');
+document.getElementById('adds').innerHTML=A.map(([id,l,d,p])=>`<label class="chk"><input type="checkbox" id="a-${id}" data-l="${l}" data-p="${p}"><span>${l}<span class="tag tx">$${(p/12).toLocaleString()}／月</span><small>${d}</small></span></label>`).join('');
+document.getElementById('others').innerHTML=O.map((l,i)=>`<label class="chk"><input type="checkbox" id="o-${i}" data-l="${l}"><span>${l}</span></label>`).join('');
+const $=id=>document.getElementById(id),fmt=n=>'$'+Math.round(n).toLocaleString('zh-TW');
+const SINGLE=3600;
+let last='';
+const calc=()=>{
+  const fs=[...document.querySelectorAll('#feats input:checked')].map(e=>({t:+e.dataset.t,l:e.dataset.l}));
+  const as=[...document.querySelectorAll('#adds input:checked')].map(e=>({l:e.dataset.l,p:+e.dataset.p}));
+  const os=[...document.querySelectorAll('#others input:checked')].map(e=>e.dataset.l);
+  const fr=Math.max(0,+$('fr').value||0),sd=+$('sd').value,m=fr*sd;
+  let oaN,oaM;if(m<=200){oaN='輕用量';oaM=0}else if(m<=3000){oaN='中用量';oaM=1000}else{oaN='高用量';oaM=1400+Math.max(0,m-6000)*0.2}
+  const oa=oaM*12,add=as.reduce((s,a)=>s+a.p,0);
+  const need=fs.length?Math.max(...fs.map(f=>f.t)):0;
+  const cost=(t,extra)=>{const p=T[t];return{y1:p.s1+p.c+p.ssl+extra*SINGLE+add+oa,y2:p.s2+p.c+p.ssl+extra*SINGLE+add+oa,t,extra}};
+  const main=cost(need,0);
+  let alt=null;for(let t=0;t<need;t++){const ex=fs.filter(f=>f.t>t).length,c=cost(t,ex);if(c.y1<main.y1&&(!alt||c.y1<alt.y1))alt=c}
+  const p=T[need];
+  $('rPlan').textContent=p.n;$('bPlan').textContent=p.n;
+  const top=fs.filter(f=>f.t===need).map(f=>f.l);
+  $('rWhy').textContent=fs.length?(need?`因為你勾選了「${top.slice(0,2).join('」「')}」${top.length>2?'等':''}，這些從${p.n}開始提供。`:'你勾選的功能，輕巧版都有。'):'還沒勾選功能，先以輕巧版估算。';
+  $('rY1').textContent=fmt(main.y1);$('rY2').textContent=fmt(main.y2);$('rM').textContent=fmt(main.y1/12);$('bY1').textContent=fmt(main.y1);
+  const rows=[[`LINE OA 串接費（首年）`,p.s1],[`${p.n}雲端服務費（年）`,p.c]];
+  if(p.ssl)rows.push(['網址 SSL 年費',p.ssl]);
+  as.forEach(a=>rows.push([`加值：${a.l}（年）`,a.p]));
+  rows.push([`LINE 官方帳號${oaN}（約 ${m.toLocaleString()} 則／月）`,oa]);
+  $('rRows').innerHTML=rows.map(([k,v])=>`<tr><td>${k}</td><td>${fmt(v)}</td></tr>`).join('')+`<tr><td><b>首年合計</b></td><td><b>${fmt(main.y1)}</b></td></tr>`;
+  $('rAlt').innerHTML=alt?`<div class="alt">可能更省的組合：<b>${T[alt.t].n}＋單項加選 ${alt.extra} 項</b>（每項 $300／月），首年約 <b>${fmt(alt.y1)}</b>，比 ${p.n} 省 ${fmt(main.y1-alt.y1)}。單項加選是否適用你的需求，諮詢時幫你確認。</div>`:'';
+  $('rX').innerHTML=os.length?`<b>需另外評估報價：</b>${os.join('、')}`:'';
+  last=['【方案試算與諮詢預約】','行業別：'+$('ind').value,'LINE 好友數：'+fr.toLocaleString()+'，每月群發 '+sd+' 次','需要的功能：'+(fs.map(f=>f.l).join('、')||'（未勾選）'),'加值模組：'+(as.map(a=>a.l).join('、')||'無'),'建議方案：'+p.n+'，首年約 '+fmt(main.y1)+'、次年起約 '+fmt(main.y2)+'（未稅）',alt?'可能更省：'+T[alt.t].n+'＋單項加選 '+alt.extra+' 項，首年約 '+fmt(alt.y1):'','其他需求：'+(os.join('、')||'無'),'補充說明：'+($('note').value.trim()||'無'),'希望碰面諮詢，方便的時段：','（來自客帶客方案試算）'].filter(Boolean).join('\n');
+};
+document.querySelector('.lay').addEventListener('input',calc);
+document.querySelector('.lay').addEventListener('change',calc);
+calc();
+$('copy').addEventListener('click',async()=>{
+  try{await navigator.clipboard.writeText(last);$('msg').textContent='已複製！按「開啟 LINE 預約諮詢」貼上傳給我。';$('out').style.display='none'}
+  catch(e){$('out').textContent=last;$('out').style.display='block';$('msg').textContent='無法自動複製，請長按下方文字全選複製。'}
+});
+}
+</script>
+</body>
+</html>

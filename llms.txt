@@ -15,6 +15,10 @@
 - [推薦好友獎勵怎麼設計](https://crm.momowinwin.com/referral/)：會員裂變（MGM）六個設計原則、四種推薦獎勵設定、產業範例
 - [美業、美甲怎麼用 LINE 預約系統](https://crm.momowinwin.com/beauty/)：客人在 LINE 自己預約、24 小時接單，依療程週期自動提醒回訪，耳沐案例
 
+## 工具
+
+- [方案試算](https://crm.momowinwin.com/plan/)：勾選需要的 LINE 會員功能，試算適合的 Mecango 方案（輕巧版、微店版、專業版、營銷版）與首年、次年費用，含 LINE 官方帳號訊息費。推薦好友（分享點數自動加好友）與按讚裂變屬於營銷版功能。
+
 ## 客製化功能
 
 - [客製化功能報價](https://crm.momowinwin.com/custom/)：Mecango 標準方案以外的特殊需求（報表、自動通知、特殊預約規則、內部小工具等），由明哲 MOMO 依行業別與需求評估可行性後個別報價，評估不收費，不包含在 Mecango 標準方案內。
