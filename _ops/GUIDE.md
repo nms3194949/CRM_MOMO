@@ -1,26 +1,27 @@
 # crm.momowinwin.com 自動寫作規則
 
-網站：明哲 MOMO 個人的 mecango LINE 會員裂變導入顧問網站（GitHub Pages，repo nms3194949/CRM_MOMO，純靜態 HTML，沒有建置步驟）。
+網站：明哲 MOMO 個人的 Mecango 會員裂變導入顧問網站（GitHub Pages，repo nms3194949/CRM_MOMO，純靜態 HTML，沒有建置步驟）。
 目標讀者：台灣實體門店老闆（餐飲、美業、醫美、藥局零售、課程、服務業）。目標：被 Google、Bing 與 AI（ChatGPT、Perplexity、Gemini、Claude）引用，並導到官方 LINE。
 
 ## 頁面格式（照 restaurant/、pricing/、referral/ 的寫法，新頁面先完整讀一篇當範本）
 - 路徑：`<slug>/index.html`，引用 `../assets/article.css`，不要改 CSS 或首頁版型。
 - 網站名稱：「客帶客｜LINE 會員裂變」。`<title>` 格式「頁面主題（2～8 個字）｜客帶客」；加 `<meta property="og:site_name" content="客帶客｜LINE 會員裂變">`；左上角 brand 文字為「客帶客｜LINE 會員裂變」；meta description 120 字內、含主要關鍵字；canonical 與 og:url 為 `https://crm.momowinwin.com/<slug>/`；meta author「明哲 MOMO」。
 - JSON-LD 陣列：Article（author 用 `{"@type":"Person","@id":"https://crm.momowinwin.com/#momo","name":"明哲 MOMO"}`，datePublished／dateModified）、BreadcrumbList、FAQPage（與頁面上的 details 問答文字完全一致）。
-- 結構：麵包屑 → h1（問句或含關鍵字）→ meta 行「作者：明哲 MOMO（mecango LINE 會員裂變導入顧問）｜最後更新：YYYY-MM-DD」→ `.answer` 重點先講（2～4 句直接回答）→ 4～7 個 h2 段落（標題本身說出重點）→ 常見問題 3～4 題 → `.cta` → 延伸閱讀（連 2～3 篇站內相關頁）→ 參考資料 note → footer。
+- 結構：麵包屑 → h1（問句或含關鍵字）→ meta 行「作者：明哲 MOMO（Mecango 會員裂變導入顧問）｜最後更新：YYYY-MM-DD」→ `.answer` 重點先講（2～4 句直接回答）→ 4～7 個 h2 段落（標題本身說出重點）→ 常見問題 3～4 題 → `.cta` → 延伸閱讀（連 2～3 篇站內相關頁）→ 參考資料 note → footer。
 - 導覽列固定寫法（照現有頁面）：`<nav><a class="brand" href="../">客帶客｜LINE 會員裂變</a><span class="navlinks"><a href="../guides/#industry">產業</a><a href="../guides/">文章</a></span><a class="btn js-line" ...>加 LINE 諮詢</a></nav>`。
 - LINE 按鈕一律直接寫死在 HTML：`<a class="btn js-line" href="https://liff.line.me/2000189532-mPbqGd5y/subscribe-3q5l5619" target="_blank" rel="noopener">`。CTA 文案提到「透過這個按鈕加入，會拿到有推薦人才有的入會禮」。
-- footer 固定：`客帶客｜LINE 會員裂變｜作者：明哲 MOMO（mecango LINE 會員裂變導入顧問）｜品牌與服務：屹登股份有限公司（mecango）`
+- footer 固定：`客帶客｜LINE 會員裂變｜作者：明哲 MOMO（Mecango 會員裂變導入顧問）｜品牌與服務：屹登股份有限公司（Mecango）`
 - 篇幅：1,500～2,500 字。用老闆的語言（熟客、回頭客、客人不回來），少用行銷術語；術語第一次出現要解釋。
 - 會員裂變相關內容同時寫「MGM（Member Get Member）」讓 AI 能對應。
 
 ## 事實與查證
 - 每篇至少 2 個附網址的外部來源（LINE 官方、政府機關、主要媒體如數位時代、iThome、經濟日報優先），資料來源寫在頁尾 note。數字一律註明日期或「截至 YYYY 年 M 月」。
-- mecango 相關事實只能使用網站上已經寫過的內容（首頁、pricing、referral、restaurant、line-oa-vs-crm）：方案價格、功能、案例（典安大藥局、老汕頭原味火鍋、耳沐、屏東縣政府、金茂宜精品咖啡、大港叁貳牛排）、專利描述。不可新增未出現過的客戶名稱、成效數字或價格。
-- 用詞：mecango 方案的一次性費用一律稱「LINE OA 串接費」（不要寫「系統建置費」），年費稱「雲端服務費」。
+- Mecango 相關事實只能使用網站上已經寫過的內容（首頁、pricing、referral、restaurant、line-oa-vs-crm）：方案價格、功能、案例（典安大藥局、老汕頭原味火鍋、耳沐、屏東縣政府、金茂宜精品咖啡、大港叁貳牛排）、專利描述。不可新增未出現過的客戶名稱、成效數字或價格。
+- 品牌英文一律寫「Mecango」（M 大寫）；作者頭銜一律寫「明哲 MOMO（Mecango 會員裂變導入顧問）」。
+- 用詞：Mecango 方案的一次性費用一律稱「LINE OA 串接費」（不要寫「系統建置費」），年費稱「雲端服務費」。
 - 政府補助：不寫具體額度、名額、截止日，只寫「部分方案可搭配政府數位轉型補助申請，資格依當期公告」。
 - 不寫競爭對手名稱的負面比較；比較時用「做法類型」而不是品牌。
-- 不提系統研發公司的名稱，只寫 mecango 與屹登股份有限公司。
+- 不提系統研發公司的名稱，只寫 Mecango 與屹登股份有限公司。
 - 不碰理財、保險、基金、投資主題（那是 MOMO 另一個品牌，與本站無關）。
 - 試算數字要用程式實際驗算。
 
