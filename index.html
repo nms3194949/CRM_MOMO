@@ -51,7 +51,7 @@ nav .wrap{display:flex;align-items:center;gap:16px;flex-wrap:wrap;padding:10px m
 nav .links{display:flex;gap:18px;flex-wrap:wrap;font-size:15px}
 nav .links a{text-decoration:none;color:var(--soft)}
 nav .links a:hover{color:var(--ink)}
-nav .btn{min-height:44px;padding:0 18px;font-size:15px}
+nav .btn{min-height:44px;padding:0 18px;font-size:15px}nav .navplan{color:var(--lineink);border-color:var(--line)}
 .hero{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:clamp(20px,4vw,56px);align-items:center}
 .hero .tag{display:inline-block;background:var(--panel);border:1px solid var(--rule);border-radius:999px;padding:4px 14px;font-size:14px;color:var(--soft);margin-bottom:18px}
 .hero h1 em{font-style:normal;color:var(--lineink)}
@@ -122,7 +122,7 @@ details p{color:var(--soft)}
 .final{text-align:left;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:24px;align-items:center}
 footer{padding:28px max(5vw,16px);font-size:14px;color:var(--soft);border-top:1px solid var(--rule)}
 footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between}
-@media(max-width:900px){.hero,.calc{grid-template-columns:minmax(0,1fr)}.steps,.grid4,.cases{grid-template-columns:repeat(2,minmax(0,1fr))}nav .links a:nth-child(-n+4){display:none}nav .links{gap:14px}}
+@media(max-width:900px){.hero,.calc{grid-template-columns:minmax(0,1fr)}.steps,.grid4,.cases{grid-template-columns:repeat(2,minmax(0,1fr))}nav .links a:nth-child(-n+3){display:none}nav .links{gap:14px}}
 @media(max-width:600px){.pains,.trust,.steps,.grid4,.cases,.facts{grid-template-columns:minmax(0,1fr)}.facts{grid-template-columns:repeat(3,minmax(0,1fr))}.facts b{font-size:18px}.fig{min-height:320px}.coupon,.final{grid-template-columns:minmax(0,1fr)}table{font-size:14px}.stack thead{display:none}.stack tr{display:grid;padding-block:10px;border-bottom:1px solid var(--rule)}.stack td{border:0;padding:3px 0}.stack td::before{content:attr(data-l)"：";color:var(--soft);font-weight:500}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
 </style>
@@ -130,8 +130,8 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-betw
 <body>
 <nav><div class="wrap">
 <a class="brand" href="#top">客帶客<small>LINE 會員裂變・讓客人幫你找客人</small></a>
-<div class="links"><a href="#how">怎麼運作</a><a href="#calc">裂變試算</a><a href="#cases">案例</a><a href="plan/">方案試算</a><a href="guides/#industry">產業</a><a href="guides/">文章</a></div>
-<a class="btn js-line" href="https://liff.line.me/2000189532-mPbqGd5y/subscribe-3q5l5619" target="_blank" rel="noopener">加 LINE 諮詢</a>
+<div class="links"><a href="#how">怎麼運作</a><a href="#calc">裂變試算</a><a href="#cases">案例</a><a href="guides/#industry">產業</a><a href="guides/">文章</a></div>
+<a class="btn ghost navplan" href="plan/">方案試算</a><a class="btn js-line" href="https://liff.line.me/2000189532-mPbqGd5y/subscribe-3q5l5619" target="_blank" rel="noopener">加 LINE 諮詢</a>
 </div></nav>
 
 <header class="band" id="top"><div class="wrap hero">
