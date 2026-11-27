@@ -3,38 +3,38 @@
 # src：可引用的網站頁面（事實只能來自這些頁面）。
 - {id: referral-reward, date: 2026-12-01, slot: tue, status: ready, title: 熟客不幫你介紹客人？推薦獎勵 3 關鍵, src: referral}
 - {id: xmas-campaign, date: 2026-12-03, slot: thu, status: todo, title: 聖誕節檔期：用 LINE 做「帶朋友來店」活動（12/25 前 3 週準備）, src: referral line-member-guide}
-- {id: quiz-birthday, date: 2026-12-05, slot: sat, status: ready, title: 選選看：生日禮什麼時候發最有效, src: line-member-guide}
+- {id: quiz-birthday, date: 2026-11-28, slot: sat, status: ready, title: 選選看：生日禮什麼時候發最有效, src: line-member-guide}
 - {id: segment-vs-blast, date: 2026-12-08, slot: tue, status: todo, title: 群發越發越貴？改成分眾只發給對的人, src: line-oa-vs-crm pricing}
 - {id: restaurant-yearend, date: 2026-12-10, slot: thu, status: todo, title: 餐廳年底尾牙／聚餐季：包廂訂位＋推薦好友組合, src: restaurant}
-- {id: spot-mistake-qr, date: 2026-12-12, slot: sat, status: todo, title: 找錯誤：這張櫃台加好友立牌哪裡不對, src: grow-line-friends}
+- {id: spot-mistake-qr, date: 2026-12-05, slot: sat, status: todo, title: 找錯誤：這張櫃台加好友立牌哪裡不對, src: grow-line-friends}
 - {id: grow-friends-8, date: 2026-12-15, slot: tue, status: todo, title: LINE 好友不夠多？店內店外 8 個做法, src: grow-line-friends}
 - {id: newyear-winback, date: 2026-12-17, slot: thu, status: todo, title: 跨年前喚回「半年沒來」的客人, src: line-member-guide}
-- {id: check-oa-enough, date: 2026-12-19, slot: sat, status: todo, title: 勾勾看：你的官方帳號還夠用嗎（5 個訊號）, src: line-oa-vs-crm}
+- {id: check-oa-enough, date: 2026-12-12, slot: sat, status: todo, title: 勾勾看：你的官方帳號還夠用嗎（5 個訊號）, src: line-oa-vs-crm}
 - {id: member-tiers, date: 2026-12-22, slot: tue, status: todo, title: 一般會員 vs VIP：看到不同的選單和優惠, src: line-member-guide}
 - {id: beauty-cny, date: 2026-12-24, slot: thu, status: todo, title: 美業過年前檔期：舊客回訪＋帶閨蜜活動, src: beauty}
-- {id: quote-regulars, date: 2026-12-26, slot: sat, status: todo, format: single, title: 單張：「新客靠廣告，熟客靠記得」, src: line-member-guide}
+- {id: quote-regulars, date: 2026-12-19, slot: sat, status: todo, format: single, title: 單張：「新客靠廣告，熟客靠記得」, src: line-member-guide}
 - {id: four-steps-recap, date: 2026-12-29, slot: tue, status: todo, title: 2027 開年檢查：集客鎖客育客拓客你做到哪步, src: line-member-guide}
 - {id: cny-prep, date: 2026-12-31, slot: thu, status: todo, title: 春節檔期提早準備（2027 春節日期發文前查證）, src: referral}
-- {id: quiz-reward-type, date: 2027-01-02, slot: sat, status: todo, title: 選選看：推薦獎勵送現金折抵還是送品項, src: referral}
+- {id: quiz-reward-type, date: 2026-12-26, slot: sat, status: todo, title: 選選看：推薦獎勵送現金折抵還是送品項, src: referral}
 - {id: coupon-expiry, date: 2027-01-05, slot: tue, status: todo, title: 優惠券發了沒人用？到期提醒與使用門檻, src: line-member-guide}
 - {id: pharmacy, date: 2027-01-07, slot: thu, status: todo, title: 藥局／零售：會員集點與回購提醒, src: line-member-guide}
-- {id: spot-mistake-blast, date: 2027-01-09, slot: sat, status: todo, title: 找錯誤：這則群發訊息哪裡會被封鎖, src: line-oa-vs-crm}
+- {id: spot-mistake-blast, date: 2027-01-02, slot: sat, status: todo, title: 找錯誤：這則群發訊息哪裡會被封鎖, src: line-oa-vs-crm}
 - {id: points-design, date: 2027-01-12, slot: tue, status: todo, title: 集點卡改到 LINE 上要注意的 4 件事, src: line-member-guide}
 - {id: clinic, date: 2027-01-14, slot: thu, status: todo, title: 診所／醫美：預約提醒與回診（注意廣告法規，不談療效）, src: beauty}
-- {id: check-referral-ready, date: 2027-01-16, slot: sat, status: todo, title: 勾勾看：你的店適合做推薦好友活動嗎, src: referral}
+- {id: check-referral-ready, date: 2027-01-09, slot: sat, status: todo, title: 勾勾看：你的店適合做推薦好友活動嗎, src: referral}
 - {id: oa-cost, date: 2027-01-19, slot: tue, status: todo, title: LINE 官方帳號訊息費怎麼算？三種方案差在哪, src: pricing}
 - {id: small-shop, date: 2027-01-21, slot: thu, status: todo, title: 一人小店也能做會員經營：最小可行做法, src: line-member-guide}
-- {id: quiz-friend-or-visit, date: 2027-01-23, slot: sat, status: todo, title: 選選看：推薦大獎該在加好友時給還是消費後給, src: referral}
+- {id: quiz-friend-or-visit, date: 2027-01-16, slot: sat, status: todo, title: 選選看：推薦大獎該在加好友時給還是消費後給, src: referral}
 - {id: games, date: 2027-01-26, slot: tue, status: todo, title: 刮刮樂、抽獎互動遊戲：什麼時候用才有效, src: line-member-guide}
 - {id: valentine, date: 2027-01-28, slot: thu, status: todo, title: 情人節檔期（2/14）：雙人優惠＋分享給另一半, src: referral}
-- {id: quote-fission, date: 2027-01-30, slot: sat, status: todo, format: single, title: 單張：「讓客人幫你找客人」是怎麼運作的（簡圖）, src: referral}
+- {id: quote-fission, date: 2027-01-23, slot: sat, status: todo, format: single, title: 單張：「讓客人幫你找客人」是怎麼運作的（簡圖）, src: referral}
 - {id: data-to-watch, date: 2027-02-02, slot: tue, status: todo, title: 會員經營每月只看這 4 個數字, src: referral line-member-guide}
 - {id: chain, date: 2027-02-04, slot: thu, status: todo, title: 多店／連鎖：會員資料怎麼共用, src: line-member-guide}
-- {id: spot-mistake-reward, date: 2027-02-06, slot: sat, status: todo, title: 找錯誤：這個推薦活動規則有 3 個漏洞, src: referral}
+- {id: spot-mistake-reward, date: 2027-01-30, slot: sat, status: todo, title: 找錯誤：這個推薦活動規則有 3 個漏洞, src: referral}
 - {id: survey, date: 2027-02-09, slot: tue, status: todo, title: 用 LINE 問卷收客人意見，還能順便分眾, src: line-member-guide}
 - {id: education, date: 2027-02-11, slot: thu, status: todo, title: 補習班／才藝教室：舊生帶新生, src: referral}
-- {id: check-member-health, date: 2027-02-13, slot: sat, status: todo, title: 勾勾看：你的會員經營健康嗎, src: line-member-guide}
+- {id: check-member-health, date: 2027-02-06, slot: sat, status: todo, title: 勾勾看：你的會員經營健康嗎, src: line-member-guide}
 - {id: custom-needs, date: 2027-02-16, slot: tue, status: todo, title: 標準功能不夠用？哪些需求適合客製, src: custom}
 - {id: plan-how, date: 2027-02-18, slot: thu, status: todo, title: 不知道要選哪個方案？3 個問題先問自己, src: plan pricing}
-- {id: quiz-blast-time, date: 2027-02-20, slot: sat, status: todo, title: 選選看：群發訊息幾點發比較好（以門店自家數據為準）, src: line-oa-vs-crm}
+- {id: quiz-blast-time, date: 2027-02-13, slot: sat, status: todo, title: 選選看：群發訊息幾點發比較好（以門店自家數據為準）, src: line-oa-vs-crm}
 # 主題用完前 2 週，自動補 12 題（產業 × 主題矩陣、迷思破解、節慶、互動），寫入本檔並在通知中列出。

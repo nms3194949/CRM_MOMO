@@ -21,7 +21,7 @@
 - 語氣：像跟老闆聊天，具體、短句、給可以照做的做法。每張字少，一張一個重點。
 
 ## 圖卡製作
-1. 寫 `_ops/ig/posts/<YYYY-MM-DD>-<topic-id>.json`（格式見下方或範例 2026-12-01-referral-reward.json、2026-12-05-quiz-birthday.json）。
+1. 寫 `_ops/ig/posts/<YYYY-MM-DD>-<topic-id>.json`（格式見下方或範例 2026-12-01-referral-reward.json、2026-11-28-quiz-birthday.json）。
 2. `python3 _ops/ig/build.py <slug>` → 輸出 `ig/<slug>/01.jpg…` 和 `preview.jpg`；若 `overflow_slides` 非空（exit 2）代表文字超出，刪字後重做。
 3. 用 Read 打開 preview.jpg 親眼檢查：字有沒有重疊、斷行是否奇怪、有沒有錯字。
 4. commit + push 到 main，等 GitHub Pages 上線（約 1～3 分鐘）再發文。
