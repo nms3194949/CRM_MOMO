@@ -60,10 +60,29 @@ async def main(slug):
         for i,s in enumerate(await pg.query_selector_all('section.s')):
             fp=os.path.join(out,f'{i+1:02d}.jpg');await s.screenshot(path=fp,type='jpeg',quality=90);files.append(fp)
         await b.close()
+
+    # 限時動態圖（1080x1920）：新貼文預告，貼文封面縮圖＋引導去主頁
+    kick=p.get('story_kicker') or ('今晚的互動題，你選哪個？' if any(s['type']=='quiz' for s in S) else '今晚新貼文')
+    tip=p.get('story_tip') or (f'到主頁看完整 {T} 張 →' if T>1 else '到主頁看完整內容 →')
+    sh=f"""<!DOCTYPE html><html><head><meta charset="utf-8"><style>{CSS}
+    .st{{width:1080px;height:1920px;background:#e8f6ee;position:relative;overflow:hidden;font-family:"Noto Sans CJK TC",sans-serif}}
+    .st .hd{{position:absolute;top:260px;left:0;right:0;text-align:center}}
+    .st .bd{{display:inline-block;background:#06c755;color:#fff;font-weight:900;font-size:46px;border-radius:999px;padding:14px 40px}}
+    .st .br{{font-size:40px;font-weight:900;margin-bottom:28px}}.st .br em{{font-style:normal;color:#e0a800}}
+    .st img{{position:absolute;left:150px;top:500px;width:780px;height:975px;border:10px solid #fff;border-radius:32px;box-shadow:0 30px 70px rgba(16,32,26,.25);transform:rotate(-2deg)}}
+    .st .ft{{position:absolute;top:1530px;left:0;right:0;text-align:center}}
+    .st .ft b{{display:inline-block;background:#ffd23f;color:#1d1a08;font-size:48px;font-weight:900;border-radius:20px;padding:20px 44px}}
+    </style></head><body><div class="st"><div class="hd"><div class="br">Share<em>Go</em>｜客帶客</div><span class="bd">{kick}</span></div>
+    <img src="file://{files[0]}"><div class="ft"><b>{tip}</b></div></div></body></html>"""
+    sp=os.path.join('/tmp',slug+'-story.html');open(sp,'w').write(sh)
+    async with async_playwright() as pw:
+        b=await pw.chromium.launch(**kw);pg=await b.new_page(viewport={'width':1080,'height':1920})
+        await pg.goto('file://'+sp);await pg.wait_for_timeout(400)
+        await pg.screenshot(path=os.path.join(out,'story.jpg'),type='jpeg',quality=90);await b.close()
     from PIL import Image
     ims=[Image.open(f).resize((360,450)) for f in files];c=Image.new('RGB',(370*len(ims)+5,460),'white')
     for i,im in enumerate(ims): c.paste(im,(5+370*i,5))
     c.save(os.path.join(out,'preview.jpg'),quality=80)
-    print(json.dumps({'slug':slug,'slides':T,'overflow_slides':over,'urls':[f'https://crm.momowinwin.com/ig/{slug}/{i+1:02d}.jpg' for i in range(T)]},ensure_ascii=False))
+    print(json.dumps({'slug':slug,'slides':T,'overflow_slides':over,'story_url':f'https://crm.momowinwin.com/ig/{slug}/story.jpg','urls':[f'https://crm.momowinwin.com/ig/{slug}/{i+1:02d}.jpg' for i in range(T)]},ensure_ascii=False))
     if over: sys.exit(2)
 asyncio.run(main(sys.argv[1]))

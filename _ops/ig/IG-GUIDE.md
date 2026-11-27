@@ -40,6 +40,11 @@ slide type：
 
 caption：開頭一句鉤子 → 3～5 行重點 → 一個互動問題（請留言）→「完整做法在個人檔案連結」→ 5 個 hashtag（中文為主，固定含 #LINE官方帳號）。≤ 2200 字元，不放網址（IG 不能點）。
 
+## 限時動態
+- build.py 會同時產生 `ig/<slug>/story.jpg`（1080x1920，新貼文預告：封面縮圖＋「到主頁看完整 N 張」）。JSON 可選填 `story_kicker`（上方綠色標籤，預設「今晚新貼文」，互動題預設「今晚的互動題，你選哪個？」）、`story_tip`（下方黃色字）。
+- 每次發完貼文後接著發限動：action `create_story` params {image_url: …/story.jpg}。
+- API 發的限動只能是圖片，**不能加投票、問答、連結、轉貼貼文等貼紙**；需要互動貼紙時，在通知裡提醒 MOMO 可以手動在 IG 轉發貼文到限動並加貼紙。
+
 ## 發文（Windsor）
 - 輪播：`execute_action` connector=`instagram` action=`create_carousel_post` account=`17841414094147682` params={image_urls:[…], caption}
 - 單張：action=`create_image_post` params={image_url, caption}
