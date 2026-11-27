@@ -9,7 +9,8 @@ topics:
   - slug: grow-line-friends
     title: 怎麼增加 LINE 官方帳號好友？實體店家 8 個做法
     type: 問題頁
-    status: todo
+    status: published
+    date: 2026-11-27
   - slug: win-back
     title: 熟客不回來怎麼辦？沉睡客喚醒的自動化做法
     type: 問題頁
@@ -60,3 +61,13 @@ topics:
     type: 問題頁
     status: todo
     source: https://www.bnext.com.tw/article/50468/line-oa-operating-key-detail
+  - slug: line-ai-agent
+    title: LINE 官方帳號 AI 代理是什麼？店家現在要先準備什麼
+    type: 問題頁
+    status: todo
+    source: https://www.bnext.com.tw/article/92615/line-converge-2026-agentic-ai
+  - slug: no-show
+    title: 預約放鳥怎麼辦？美業、餐廳用 LINE 降低爽約的做法
+    type: 問題頁
+    status: todo
+    source: https://www.lycbiz.com/jp/column/line-official-account/marketing/salon-reservation/?list=17076
