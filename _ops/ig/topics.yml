@@ -3,7 +3,7 @@
 # src：可引用的網站頁面（事實只能來自這些頁面）。
 - {id: referral-reward, date: 2026-12-01, slot: tue, status: ready, title: 熟客不幫你介紹客人？推薦獎勵 3 關鍵, src: referral}
 - {id: xmas-campaign, date: 2026-12-03, slot: thu, status: todo, title: 聖誕節檔期：用 LINE 做「帶朋友來店」活動（12/25 前 3 週準備）, src: referral line-member-guide}
-- {id: quiz-birthday, date: 2026-11-28, slot: sat, status: ready, title: 選選看：生日禮什麼時候發最有效, src: line-member-guide}
+- {id: quiz-birthday, date: 2026-11-28, slot: sat, status: posted, title: 選選看：生日禮什麼時候發最有效, src: line-member-guide}
 - {id: segment-vs-blast, date: 2026-12-08, slot: tue, status: todo, title: 群發越發越貴？改成分眾只發給對的人, src: line-oa-vs-crm pricing}
 - {id: restaurant-yearend, date: 2026-12-10, slot: thu, status: todo, title: 餐廳年底尾牙／聚餐季：包廂訂位＋推薦好友組合, src: restaurant}
 - {id: spot-mistake-qr, date: 2026-12-05, slot: sat, status: todo, title: 找錯誤：這張櫃台加好友立牌哪裡不對, src: grow-line-friends}
